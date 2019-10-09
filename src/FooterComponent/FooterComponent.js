@@ -1,5 +1,5 @@
 import React from 'react'
-import { Navbar } from 'reactstrap';
+import { Navbar, Row, Col } from 'reactstrap';
 
 const footerComponent = () => {
     const style = {
@@ -8,13 +8,30 @@ const footerComponent = () => {
         bottom:'0',
         right:'0',
         textAlign: 'center',
-        color: 'white'
+        color: 'white',
     };
+
+    const textStyle = {
+        display: 'center'
+    };
+
+    const gridStyle = {
+        width: '100%'
+    };
+
+
 
     return (
         <footer style={style}>
             <Navbar color='dark'>
-                <p>Copyright by Ebuy</p>
+                <Row style={gridStyle}>
+                    <Col>
+                        <p>About</p>
+                    </Col>
+                    <Col style={textStyle}>
+                        <p>Copyright by EbuyOnline</p>
+                    </Col>
+                </Row>
             </Navbar>
         </footer>
     )
