@@ -12,10 +12,13 @@ import {
     UncontrolledDropdown,
     DropdownToggle,
     DropdownMenu,
-    DropdownItem } from 'reactstrap';
+    DropdownItem, Col
+} from 'reactstrap';
 
 const headerComponent = ( props ) => {
-
+    const searchStyle = {
+        width: "100%"
+    }
     return(
         <div>
             <Navbar color="dark" light expand="md">
@@ -28,6 +31,9 @@ const headerComponent = ( props ) => {
                         alt="React Bootstrap logo"
                     />
                 </NavbarBrand>
+                <Col style={searchStyle} xs={10}>
+                    <input style={searchStyle} className="form-control" type="text" placeholder="Search" aria-label="Search"/>
+                </Col>
                 <NavbarToggler/>
                 <Collapse navbar>
                     <Nav className="ml-auto" navbar>

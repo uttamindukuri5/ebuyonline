@@ -3,7 +3,7 @@ import { Navbar, Row, Col } from 'reactstrap';
 
 const footerComponent = () => {
     const style = {
-        position:'absolute',
+        position:'relative',
         left:'0',
         bottom:'0',
         right:'0',
@@ -19,8 +19,6 @@ const footerComponent = () => {
         width: '100%'
     };
 
-
-
     return (
         <footer style={style}>
             <Navbar color='dark'>
@@ -30,6 +28,11 @@ const footerComponent = () => {
                     </Col>
                     <Col style={textStyle}>
                         <p>Copyright by EbuyOnline</p>
+                    </Col>
+                </Row>
+                <Row style={gridStyle}>
+                    <Col style={textStyle}>
+                        Conditions of UsePrivacy NoticeInterest-Based Ads© 1996-2019, Amazon.com, Inc. or its affiliates
                     </Col>
                 </Row>
             </Navbar>

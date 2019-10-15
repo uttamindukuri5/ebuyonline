@@ -1,6 +1,8 @@
 import React from 'react'
-import { Row, Col, Breadcrumb, BreadcrumbItem } from 'reactstrap'
+import { Row, Col, Breadcrumb, BreadcrumbItem} from 'reactstrap'
 import DisplayImage from './DisplayObjectImage';
+import ObjectDescription from './ObjectDescription';
+import OjbectPrice from './ObjectPrice';
 
 const objectPage = ( props ) => {
     const boxStyle = {
@@ -8,10 +10,10 @@ const objectPage = ( props ) => {
     };
 
     return(
-        <div>
+        <div style={boxStyle}>
             <Row>
-                <Col>
-                    <div style={boxStyle}>
+                <Col xs={5}>
+                    <div>
                         <Breadcrumb>
                             <BreadcrumbItem><a href="http://localhost:3000/">Home</a></BreadcrumbItem>
                             <BreadcrumbItem active>The Amazing Sloth</BreadcrumbItem>
@@ -19,12 +21,22 @@ const objectPage = ( props ) => {
                         <DisplayImage img={ props.img }/>
                     </div>
                 </Col>
-                <Col style={boxStyle}>
-                    <h1>The Amazing Sloth</h1>
+                <Col>
+                    <ObjectDescription />
+                </Col>
+                <Col>
+                    <OjbectPrice priceOption={props.currentPriceOption} changePriceOption={props.changePriceOption} price={props.price} />
+                </Col>
+            </Row>
+            <Row>
+                <Col>
+                    <h1>Rating Section</h1>
+                </Col>
+                <Col>
+                    <h1>Comment Section</h1>
                 </Col>
             </Row>
         </div>
-
     )
 };
 
