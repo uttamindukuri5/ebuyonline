@@ -8,8 +8,14 @@ const ojbectDescription = () => {
     const textStyle = {
         textAlign: 'left'
     };
+
+    const featureStyle = {
+        padding: '5%'
+    };
+
     return(
-        <div style={boxStyle}>
+        <div className='shadow p-3 mb-5 bg-white rounded' style={boxStyle}>
+            <h1>The Amazing Sloth</h1>
             <div>
                 <h5>Description</h5>
                 <hr />
@@ -19,7 +25,7 @@ const ojbectDescription = () => {
                     that like to observe its surrounding. They are truly amazing animals.
                 </p>
             </div>
-            <div>
+            <div style={featureStyle}>
                 <h5>Features</h5>
                 <hr />
                 <ul style={textStyle}>
@@ -30,6 +36,6 @@ const ojbectDescription = () => {
             </div>
         </div>
     )
-}
+};
 
 export default ojbectDescription;

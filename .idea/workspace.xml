@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="43b66c40-e9a1-4f23-8eea-9565faf92524" name="Default Changelist" comment="">
+    <list default="true" id="43b66c40-e9a1-4f23-8eea-9565faf92524" name="Default Changelist" comment="Added a pricing component and made some minor tweaks to design.">
+      <change afterPath="$PROJECT_DIR$/src/ObjectPage/ObjectPrice.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ObjectPage/ObjectDescription.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/ObjectPage/ObjectDescription.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ObjectPage/ObjectPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/ObjectPage/ObjectPage.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,7 +36,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../react-complete-guide" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -92,7 +97,10 @@
       <workItem from="1570634806388" duration="1652000" />
       <workItem from="1570677610729" duration="434000" />
       <workItem from="1570733864116" duration="2738000" />
-      <workItem from="1570839712077" duration="7185000" />
+      <workItem from="1570839712077" duration="7607000" />
+      <workItem from="1570917169127" duration="4007000" />
+      <workItem from="1570979536253" duration="6011000" />
+      <workItem from="1571092053541" duration="8425000" />
     </task>
     <task id="LOCAL-00001" summary="Centered the footer navbar text and added About in footer navbar">
       <created>1570636398901</created>
@@ -101,7 +109,14 @@
       <option name="project" value="LOCAL" />
       <updated>1570636398901</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added description section for object page and a layout for price section">
+      <created>1570858562220</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1570858562220</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -124,6 +139,7 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="Centered the footer navbar text and added About in footer navbar" />
-    <option name="LAST_COMMIT_MESSAGE" value="Centered the footer navbar text and added About in footer navbar" />
+    <MESSAGE value="Added description section for object page and a layout for price section" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added description section for object page and a layout for price section" />
   </component>
 </project>
