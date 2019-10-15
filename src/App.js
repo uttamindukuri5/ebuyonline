@@ -6,9 +6,10 @@ import Footer from './FooterComponent/FooterComponent';
 
 function App() {
 
-    const [priceOption, setPriceOption] = useState({
+    const [price, setPrice] = useState({
         priceOption: 'new',
-        price: 598.23
+        price: 598.23,
+        quantity: 1
     });
 
     const priceOptionHandler = (event) => {
@@ -18,7 +19,12 @@ function App() {
         } else {
             price = 478.13;
         }
-        setPriceOption({priceOption: event.target.value, price: price})
+        setPrice({priceOption: event.target.value, price: price})
+    };
+
+    const quantityHandler = (event) => {
+        const quantity = event.target.value;
+        setPrice({quantity: quantity, price: (price.price * quantity)})
     };
 
     const backgroundStyle = {
@@ -29,7 +35,8 @@ function App() {
     <div className="App" style={backgroundStyle}>
         <Navbar />
         <ObjectPage img='https://c402277.ssl.cf1.rackcdn.com/photos/14785/images/story_full_width/shutterstock_532108075.jpg?1512507049'
-        currentPriceOption={priceOption.priceOption} changePriceOption={priceOptionHandler} price={priceOption.price} />
+        currentPriceOption={price.priceOption} changePriceOption={priceOptionHandler} price={price.price}
+                    quantity={price.quantity} changeQuantity={quantityHandler}/>
         <Footer />
     </div>
   );
