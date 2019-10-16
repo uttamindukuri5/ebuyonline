@@ -2,7 +2,7 @@ import React from 'react'
 import { Row, Col, Breadcrumb, BreadcrumbItem} from 'reactstrap'
 import DisplayImage from './DisplayObjectImage';
 import ObjectDescription from './ObjectDescription';
-import OjbectPrice from './ObjectPrice';
+import ObjectPrice from './ObjectPrice';
 
 const objectPage = ( props ) => {
     const boxStyle = {
@@ -25,7 +25,8 @@ const objectPage = ( props ) => {
                     <ObjectDescription />
                 </Col>
                 <Col>
-                    <OjbectPrice priceOption={props.currentPriceOption} changePriceOption={props.changePriceOption} price={props.price} />
+                    <ObjectPrice priceOption={props.currentPriceOption} changePriceOption={props.changePriceOption} price={props.price}
+                        quantity={props.quantity} changeQuantity={props.changeQuantity}/>
                 </Col>
             </Row>
             <Row>

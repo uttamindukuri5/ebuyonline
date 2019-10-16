@@ -31,11 +31,11 @@ const headerComponent = ( props ) => {
                         alt="React Bootstrap logo"
                     />
                 </NavbarBrand>
-                <Col style={searchStyle} xs={10}>
-                    <input style={searchStyle} className="form-control" type="text" placeholder="Search" aria-label="Search"/>
-                </Col>
                 <NavbarToggler/>
                 <Collapse navbar>
+                    <Col style={searchStyle} xs={10}>
+                        <input style={searchStyle} className="form-control" type="text" placeholder="Search" aria-label="Search"/>
+                    </Col>
                     <Nav className="ml-auto" navbar>
                         <NavItem>
                             <NavLink href="/components/">
