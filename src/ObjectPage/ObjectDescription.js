@@ -1,6 +1,6 @@
 import React from 'react'
 
-const ojbectDescription = () => {
+const objectDescription = () => {
     const boxStyle = {
         padding: '3%',
     };
@@ -38,4 +38,4 @@ const ojbectDescription = () => {
     )
 };
 
-export default ojbectDescription;
+export default objectDescription;

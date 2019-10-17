@@ -1,20 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-<<<<<<< HEAD
-    <list default="true" id="43b66c40-e9a1-4f23-8eea-9565faf92524" name="Default Changelist" comment="">
+    <list default="true" id="b3898cfd-c460-4359-801c-e0c27b57d513" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Backend_Shinanigains/Database.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend_Shinanigains/main_stuff.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-=======
-    <list default="true" id="43b66c40-e9a1-4f23-8eea-9565faf92524" name="Default Changelist" comment="Added a pricing component and made some minor tweaks to design.">
-      <change afterPath="$PROJECT_DIR$/src/ObjectPage/ObjectPrice.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FooterComponent/FooterComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/FooterComponent/FooterComponent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HeaderComponent/HeaderComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/HeaderComponent/HeaderComponent.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ObjectPage/ObjectDescription.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/ObjectPage/ObjectDescription.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ObjectPage/ObjectPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/ObjectPage/ObjectPage.js" afterDir="false" />
->>>>>>> f80878f10f50cb5bb4332a30aa9ae0019c09bb74
+      <change beforePath="$PROJECT_DIR$/src/ObjectPage/ObjectPrice.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/ObjectPage/ObjectPrice.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -79,6 +77,10 @@
       <envs />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="JavaScript Debug.Debug Application" />
+      <item itemvalue="npm.npm start" />
+    </list>
   </component>
   <component name="SvnConfiguration">
     <configuration>C:\Users\uttam\AppData\Roaming\Subversion</configuration>
@@ -99,11 +101,6 @@
       <workItem from="1570395599620" duration="234000" />
       <workItem from="1570462364995" duration="1174000" />
       <workItem from="1570589162383" duration="899000" />
-<<<<<<< HEAD
-      <workItem from="1570661027087" duration="612000" />
-      <workItem from="1571011235529" duration="1435000" />
-      <workItem from="1571156020516" duration="888000" />
-=======
       <workItem from="1570634178513" duration="167000" />
       <workItem from="1570634806388" duration="1652000" />
       <workItem from="1570677610729" duration="434000" />
@@ -111,8 +108,13 @@
       <workItem from="1570839712077" duration="7607000" />
       <workItem from="1570917169127" duration="4007000" />
       <workItem from="1570979536253" duration="6011000" />
-      <workItem from="1571092053541" duration="8425000" />
->>>>>>> f80878f10f50cb5bb4332a30aa9ae0019c09bb74
+      <workItem from="1571092053541" duration="8693000" />
+      <workItem from="1571147300308" duration="2053000" />
+      <workItem from="1571151848421" duration="4346000" />
+      <workItem from="1571166063252" duration="9245000" />
+      <workItem from="1571179096366" duration="2714000" />
+      <workItem from="1571184100487" duration="87000" />
+      <workItem from="1571184424583" duration="614000" />
     </task>
     <task id="LOCAL-00001" summary="Centered the footer navbar text and added About in footer navbar">
       <created>1570636398901</created>
@@ -128,7 +130,28 @@
       <option name="project" value="LOCAL" />
       <updated>1570858562220</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added radio button functionality, price change handler, added layout for comment and rating">
+      <created>1571116317063</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1571116317063</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Added certain files to .gitignore">
+      <created>1571156783204</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1571156783204</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Added state for quantity">
+      <created>1571157109080</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1571157109080</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -152,6 +175,9 @@
     <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="Centered the footer navbar text and added About in footer navbar" />
     <MESSAGE value="Added description section for object page and a layout for price section" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added description section for object page and a layout for price section" />
+    <MESSAGE value="Added radio button functionality, price change handler, added layout for comment and rating" />
+    <MESSAGE value="Added certain files to .gitignore" />
+    <MESSAGE value="Added state for quantity" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added state for quantity" />
   </component>
 </project>

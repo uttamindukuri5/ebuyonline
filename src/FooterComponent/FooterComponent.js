@@ -4,9 +4,10 @@ import { Navbar, Row, Col } from 'reactstrap';
 const footerComponent = () => {
     const style = {
         position:'absolute',
-        width: "100%",
         textAlign: 'center',
         color: 'white',
+        bottom: '0',
+        width: '100%'
     };
 
     const textStyle = {

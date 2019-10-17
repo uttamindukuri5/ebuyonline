@@ -60,15 +60,15 @@ const objectPrice = (props) => {
           <div>
               <Row>
                   <Col style={quantityStyle}>
-                      <Label>Quantitiy: </Label>
+                      <Label>Quantity: </Label>
                   </Col>
                   <Col>
-                      <Input type="select" name="select" id="exampleSelect">
-                          <option>1</option>
-                          <option>2</option>
-                          <option>3</option>
-                          <option>4</option>
-                          <option>5</option>
+                      <Input type="select" name="select" id="exampleSelect" value={props.quantity} onChange={props.changeQuantity}>
+                          <option value={1}>1</option>
+                          <option value={2}>2</option>
+                          <option value={3}>3</option>
+                          <option value={4}>4</option>
+                          <option value={5}>5</option>
                       </Input>
                   </Col>
               </Row>
