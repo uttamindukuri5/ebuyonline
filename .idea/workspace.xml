@@ -2,17 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b3898cfd-c460-4359-801c-e0c27b57d513" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Backend_Shinanigains/Database.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Backend_Shinanigains/main_stuff.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FooterComponent/FooterComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/FooterComponent/FooterComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/HeaderComponent/HeaderComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/HeaderComponent/HeaderComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ObjectPage/ObjectDescription.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/ObjectPage/ObjectDescription.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ObjectPage/ObjectPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/ObjectPage/ObjectPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ObjectPage/ObjectPrice.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/ObjectPage/ObjectPrice.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
