@@ -7,83 +7,31 @@ import {Row,
 const HomePage = (props) => {
     const cardStyle = {
         width: "23%",
-        padding: "5px",
+        padding: "10px",
         margin: "auto"
     };
     const bodyStyle = {
-        margin: "center",
-        padding: "5px"
+        padding: "10px 10% 10px 10%",
+        display: "top"
     };
+    let store_items = []
+    for(let i = 0; i < 8; i++) {
+        store_items.push(
+            <Card style={cardStyle}>
+                 <img src={props.items[i][0]} className='card-img-top'/>
+                 <CardBody>
+                     <CardTitle>Sloth for sale!</CardTitle>
+                     <CardText>This sloth costs ${props.items[i][1]}</CardText>
+                     <Button href={props.items[i][0]} color="primary">Link</Button>
+                 </CardBody>
+             </Card>)
+
+    }
     return (
         <div className="App">
-            <Container fluid={true}>
-                <Row style={bodyStyle}>
-                    <Card style={cardStyle}>
-                        <img src={props.img} className='card-img-top'/>
-                        <CardBody>
-                            <CardTitle>Sloth for sale!</CardTitle>
-                            <CardText>This sloth costs {props.price}</CardText>
-                            <Button href="https://www.google.com/" color="primary">Google.com</Button>
-                        </CardBody>
-                    </Card>
-                    <Card style={cardStyle}>
-                        <img src={props.img} className='card-img-top'/>
-                        <CardBody>
-                            <CardTitle>Sloth for sale!</CardTitle>
-                            <CardText>This sloth costs {props.price}</CardText>
-                            <Button href="https://www.google.com/" color="primary">Google.com</Button>
-                        </CardBody>
-                    </Card>
-                    <Card style={cardStyle}>
-                        <img src={props.img} className='card-img-top'/>
-                        <CardBody>
-                            <CardTitle>Sloth for sale!</CardTitle>
-                            <CardText>This sloth costs {props.price}</CardText>
-                            <Button href="https://www.google.com/" color="primary">Google.com</Button>
-                        </CardBody>
-                    </Card>
-                    <Card style={cardStyle}>
-                        <img src={props.img} className='card-img-top'/>
-                        <CardBody>
-                            <CardTitle>Sloth for sale!</CardTitle>
-                            <CardText>This sloth costs {props.price}</CardText>
-                            <Button href="https://www.google.com/" color="primary">Google.com</Button>
-                        </CardBody>
-                    </Card>
-                </Row>
-                <Row style={bodyStyle}>
-                    <Card style={cardStyle}>
-                        <img src={props.img} className='card-img-top'/>
-                        <CardBody>
-                            <CardTitle>Sloth for sale!</CardTitle>
-                            <CardText>This sloth costs {props.price}</CardText>
-                            <Button href="https://www.google.com/" color="primary">Google.com</Button>
-                        </CardBody>
-                    </Card>
-                    <Card style={cardStyle}>
-                        <img src={props.img} className='card-img-top'/>
-                        <CardBody>
-                            <CardTitle>Sloth for sale!</CardTitle>
-                            <CardText>This sloth costs {props.price}</CardText>
-                            <Button href="https://www.google.com/" color="primary">Google.com</Button>
-                        </CardBody>
-                    </Card>
-                    <Card style={cardStyle}>
-                        <img src={props.img} className='card-img-top'/>
-                        <CardBody>
-                            <CardTitle>Sloth for sale!</CardTitle>
-                            <CardText>This sloth costs {props.price}</CardText>
-                            <Button href="https://www.google.com/" color="primary">Google.com</Button>
-                        </CardBody>
-                    </Card>
-                    <Card style={cardStyle}>
-                        <img src={props.img} className='card-img-top'/>
-                        <CardBody>
-                            <CardTitle>Sloth for sale!</CardTitle>
-                            <CardText>This sloth costs {props.price}</CardText>
-                            <Button href="https://www.google.com/" color="primary">Google.com</Button>
-                        </CardBody>
-                    </Card>
+            <Container fluid={true} style={bodyStyle}>
+                <Row>
+                    {store_items}
                 </Row>
             </Container>
         </div>

@@ -3,10 +3,8 @@ import { Navbar, Row, Col } from 'reactstrap';
 
 const footerComponent = () => {
     const style = {
-        position:'relative',
-        left:'0',
-        bottom:'0',
-        right:'0',
+        position:'absolute',
+        width: "100%",
         textAlign: 'center',
         color: 'white',
     };
