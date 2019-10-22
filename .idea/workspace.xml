@@ -4,6 +4,7 @@
     <list default="true" id="b3898cfd-c460-4359-801c-e0c27b57d513" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LoginPage/LoginPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/CartPage/CartPage.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -78,7 +79,7 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="43b66c40-e9a1-4f23-8eea-9565faf92524" name="Default Changelist" comment="" />
+      <changelist id="b3898cfd-c460-4359-801c-e0c27b57d513" name="Default Changelist" comment="" />
       <created>1570144924747</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -106,6 +107,8 @@
       <workItem from="1571179096366" duration="2714000" />
       <workItem from="1571184100487" duration="87000" />
       <workItem from="1571184424583" duration="614000" />
+      <workItem from="1571456011523" duration="303000" />
+      <workItem from="1571709970913" duration="2405000" />
     </task>
     <task id="LOCAL-00001" summary="Centered the footer navbar text and added About in footer navbar">
       <created>1570636398901</created>
