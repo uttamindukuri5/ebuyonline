@@ -2,8 +2,7 @@ import React from 'react'
 import { Navbar, Row, Col } from 'reactstrap';
 
 const footerComponent = () => {
-    const style = {
-        position:'absolute',
+    const footerStyle = {
         textAlign: 'center',
         color: 'white',
         bottom: '0',
@@ -19,7 +18,7 @@ const footerComponent = () => {
     };
 
     return (
-        <footer style={style}>
+        <footer style={footerStyle}>
             <Navbar color='dark'>
                 <Row style={gridStyle}>
                     <Col>
