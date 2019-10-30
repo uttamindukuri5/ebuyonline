@@ -4,7 +4,6 @@
     <list default="true" id="b3898cfd-c460-4359-801c-e0c27b57d513" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FooterComponent/FooterComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/FooterComponent/FooterComponent.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/HomePage/HomePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/HomePage/HomePage.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -33,7 +32,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../react-complete-guide" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -42,7 +41,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="vcs.Subversion" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -76,7 +75,7 @@
     </list>
   </component>
   <component name="SvnConfiguration">
-    <configuration>C:\Users\uttam\AppData\Roaming\Subversion</configuration>
+    <configuration>C:\Users\cic_1\AppData\Roaming\Subversion</configuration>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -109,7 +108,9 @@
       <workItem from="1571184100487" duration="87000" />
       <workItem from="1571184424583" duration="614000" />
       <workItem from="1571456011523" duration="303000" />
-      <workItem from="1571709970913" duration="15181000" />
+      <workItem from="1571709970913" duration="16160000" />
+      <workItem from="1571934108901" duration="7374000" />
+      <workItem from="1572397041535" duration="5214000" />
     </task>
     <task id="LOCAL-00001" summary="Centered the footer navbar text and added About in footer navbar">
       <created>1570636398901</created>

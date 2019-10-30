@@ -5,44 +5,90 @@ import {Row, Col,
     Card, CardText, CardTitle, CardBody} from 'reactstrap';
 
 const HomePage = (props) => {
-    const cardStyle = {
-        width: "23%",
-        padding: "10px",
-        height: "100%"
-    };
     const bodyStyle = {
-        padding: "10px 10% 10px 10%",
-        display: "top"
-    };
-    const flowStyle = {
-        flex: 1,
-        flexDirection: "col"
+        padding: "20px 17.5% 20px 17.5%"
     }
-    let store_items = []
-    for(let i = 0; i < 8; i++) {
-        store_items.push(
-            <Col style={flowStyle}>
+    const cardStyle = {
+        marginBottom: "10px"
+    }
+
+    let store_col_1 = [];
+    for(let i = 0; i < props.items.length; i++) {
+        if(i % 4 === 0) {
+            store_col_1.push(
                 <Card style={cardStyle}>
-                     <img src={props.items[i][0]} className='card-img-top'/>
-                     <CardBody>
-                         <CardTitle>Sloth for sale!</CardTitle>
-                         <CardText>This sloth costs ${props.items[i][1]}</CardText>
-                         <Button href={props.items[i][0]} color="primary">Link</Button>
-                     </CardBody>
-                </Card>
-            </Col>)
+                    <img src={props.items[i][0]} className='card-img-top'/>
+                    <CardBody>
+                        <CardTitle>Sloth for sale!</CardTitle>
+                        <CardText>This sloth costs ${props.items[i][2]}</CardText>
+                        <Button href={props.items[i][0]} color="primary">Link</Button>
+                    </CardBody>
+                </Card>)
+        }
     }
-    store_items.forEach(function(item_card) {
-        console.log(item_card);
-    });
+    let store_col_2 = [];
+    for(let i = 0; i < props.items.length; i++) {
+        if(i % 4 === 1) {
+            store_col_2.push(
+                <Card style={cardStyle}>
+                    <img src={props.items[i][0]} className='card-img-top'/>
+                    <CardBody>
+                        <CardTitle>Sloth for sale!</CardTitle>
+                        <CardText>This sloth costs ${props.items[i][2]}</CardText>
+                        <Button href={props.items[i][0]} color="primary">Link</Button>
+                    </CardBody>
+                </Card>)
+        }
+    }
+    let store_col_3 = [];
+    for(let i = 0; i < props.items.length; i++) {
+        if(i % 4 === 2) {
+            store_col_3.push(
+                <Card style={cardStyle}>
+                    <img src={props.items[i][0]} className='card-img-top'/>
+                    <CardBody>
+                        <CardTitle>Sloth for sale!</CardTitle>
+                        <CardText>This sloth costs ${props.items[i][2]}</CardText>
+                        <Button href={props.items[i][0]} color="primary">Link</Button>
+                    </CardBody>
+                </Card>)
+        }
+    }
+    let store_col_4 = [];
+    for(let i = 0; i < props.items.length; i++) {
+        if(i % 4 === 3) {
+            store_col_4.push(
+                <Card style={cardStyle}>
+                    <img src={props.items[i][0]} className='card-img-top'/>
+                    <CardBody>
+                        <CardTitle>Sloth for sale!</CardTitle>
+                        <CardText>This sloth costs ${props.items[i][2]}</CardText>
+                        <Button href={props.items[i][0]} color="primary">Link</Button>
+                    </CardBody>
+                </Card>)
+        }
+    }
+
     return (
         <div className="App">
             <Container fluid={true} style={bodyStyle}>
-                <Col>
-                    {store_items}
-                </Col>
+                <Row>
+                    <Col>
+                        {store_col_1}
+                    </Col>
+                    <Col>
+                        {store_col_2}
+                    </Col>
+                    <Col>
+                        {store_col_3}
+                    </Col>
+                    <Col>
+                        {store_col_4}
+                    </Col>
+                </Row>
             </Container>
         </div>
     );
-}
+};
+
 export default HomePage;

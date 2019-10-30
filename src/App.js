@@ -7,7 +7,6 @@ import HomePage from './HomePage/HomePage';
 import CartPage from './CartPage/CartPage';
 
 function App() {
-
     const [price, setPrice] = useState({
         priceOption: 'new',
         price: 598.23,
@@ -41,14 +40,15 @@ function App() {
     };
 
     var list_items = [
-        ["https://images-na.ssl-images-amazon.com/images/I/81WJyO53YAL._SY679_.jpg", 10],
-        ["https://as-images.apple.com/is/og-default?wid=1200&hei=630&fmt=jpeg&qlt=95&op_usm=0.5,0.5&.v=1525370171638", 10],
+        ["https://images-na.ssl-images-amazon.com/images/I/81WJyO53YAL._SY679_.jpg", "Pineapple", 10],
+        ["https://as-images.apple.com/is/og-default?wid=1200&hei=630&fmt=jpeg&qlt=95&op_usm=0.5,0.5&.v=1525370171638", "Apple", 10],
         ["https://www.cross.com/media/catalog/product/cache/2d9d76f34da5071e6b70583d468484c0/f/d/fd7ygwu1jmqd60nvrzog_1_6.jpg", 10],
         ["https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2017/11/12193133/German-Shepherd-Puppy-Fetch.jpg", 10],
         ["https://www.rainforest-alliance.org/sites/default/files/styles/750w_585h/public/2016-09/three-toed-sloth.jpg?itok=uWF-NdZZ", 10],
         ["https://liquipedia.net/commons/images/a/af/League_Infobox_Shen.jpg", 10],
         ["https://www.vets4pets.com/siteassets/species/cat/kitten/tiny-kitten-in-field.jpg?width=1040", 10],
-        ["https://i.ytimg.com/vi/BCr7y4SLhck/maxresdefault.jpg", 10]
+        ["https://i.ytimg.com/vi/BCr7y4SLhck/maxresdefault.jpg", 10],
+        ["https://dotesports-media.nyc3.cdn.digitaloceanspaces.com/wp-content/uploads/2019/10/18142643/senna.jpg", 10]
     ]
     return (
       <div className="App" style={backgroundStyle}>
