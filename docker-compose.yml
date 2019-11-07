@@ -1,0 +1,28 @@
+version: "3"
+services:
+  db:
+    image: mongo:4.0-xenial
+    restart: always
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongodata:/data/db
+  api:
+    build: ./MiddleEnd
+    command: python -u app.py
+    volumes:
+      - ./MiddleEnd:/usr/src/app
+    ports:
+      - "5000:5000"
+    links:
+      - db
+  client:
+    build: ./FrontEnd
+    volumes:
+      - ./FrontEnd:/usr/src/app
+    ports:
+      - "3000:3000"
+    links:
+      - api
+volumes:
+  mongodata:
