@@ -38,6 +38,6 @@ const CartPage = (props) => {
             </Container>
         </div>
     );
-}
+};
 
 export default CartPage;

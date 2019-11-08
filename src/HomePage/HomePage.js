@@ -7,10 +7,10 @@ import {Row, Col,
 const HomePage = (props) => {
     const bodyStyle = {
         padding: "20px 17.5% 20px 17.5%"
-    }
+    };
     const cardStyle = {
         marginBottom: "10px"
-    }
+    };
 
     let store_col_1 = [];
     for(let i = 0; i < props.items.length; i++) {
