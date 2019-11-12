@@ -30,7 +30,7 @@ const footerComponent = () => {
                 </Row>
                 <Row style={gridStyle}>
                     <Col style={textStyle}>
-                        Conditions of UsePrivacy NoticeInterest-Based Ads© 1996-2019, Amazon.com, Inc. or its affiliates
+                        Conditions of UsePrivacy NoticeInterest-Based Ads© 1996-2019, EBuyOnline.com, Inc. or its affiliates
                     </Col>
                 </Row>
             </Navbar>
