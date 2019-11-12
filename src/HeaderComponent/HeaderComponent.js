@@ -18,7 +18,7 @@ import {
 const headerComponent = ( props ) => {
     const searchStyle = {
         width: "100%"
-    }
+    };
     return(
         <div>
             <Navbar color="dark" light expand="md">

@@ -27,5 +27,10 @@ const CartPage = (props) => {
             </ListGroup>
         </div>
     );
+<<<<<<< HEAD
 }
+=======
+};
+
+>>>>>>> b702e827f3621b13d8e76824a44ba6771555c0ff
 export default CartPage;

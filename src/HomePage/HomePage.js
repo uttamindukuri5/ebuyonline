@@ -7,11 +7,16 @@ import {Row, Col,
 const HomePage = (props) => {
     const bodyStyle = {
         padding: "20px 17.5% 20px 17.5%"
-    }
+    };
     const cardStyle = {
+<<<<<<< HEAD
         marginBottom: "10px",
         marginLeft: "-20px"
     }
+=======
+        marginBottom: "10px"
+    };
+>>>>>>> b702e827f3621b13d8e76824a44ba6771555c0ff
 
     let store_col_1 = [];
     for(let i = 0; i < props.items.length; i++) {
