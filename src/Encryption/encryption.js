@@ -43,8 +43,12 @@ function secondLevel(str, k) {
     return hex;
 }
 
-// This is a test call, please change it near the function call. DO NOT INCLUDE IT IN SOURCE CODE. TEST CASE ONLY.
+function passEncrypt(str, k) {
+    return rot13cipher(str, k);
+}
+
+// DO NOT INCLUDE IT IN SOURCE CODE. TEST CASE ONLY.
 console.log("Test case")
-var hexValue = rot13cipher('AaBb-?', 3);
+var hexValue = passEncrypt('AaBb-?', 3);
 console.log("Test Value: " + hexValue);
 console.log("Expected hexString: 129-6d1cd3-1c15385a-37ee")
