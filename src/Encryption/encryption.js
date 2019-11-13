@@ -1,6 +1,6 @@
 
 // Encryption for passwords entered by users.
-function rot13cipher(str) {
+function rot13cipher(str, k) {
     var aCode = 'a'.charCodeAt(0);  // Starting Point (lowercase).
     var ACode = 'A'.charCodeAt(0);  // Starting Point (uppercase).
     var zCode = 'z'.charCodeAt(0);  // Ending Point (lowercase).
@@ -25,7 +25,7 @@ function rot13cipher(str) {
         else
             retString = retString.concat(str[i]);
     }
-    return secondLevel(retString, 3);
+    return secondLevel(retString, k);
 }
 
 function secondLevel(str, k) {
@@ -42,4 +42,9 @@ function secondLevel(str, k) {
     }
     return hex;
 }
-var hexValue = rot13cipher('AaBb-?');
+
+// This is a test call, please change it near the function call. DO NOT INCLUDE IT IN SOURCE CODE. TEST CASE ONLY.
+console.log("Test case")
+var hexValue = rot13cipher('AaBb-?', 3);
+console.log("Test Value: " + hexValue);
+console.log("Expected hexString: 129-6d1cd3-1c15385a-37ee")
