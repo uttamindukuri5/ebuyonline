@@ -1,43 +1,36 @@
 import React from 'react';
+
 import {
-    Button,
-    Form, FormGroup,
-    Label, Input, Card, CardBody, Container, Row
-} from 'reactstrap';
+    Navbar, Row, Col,
+    ListGroup, ListGroupItem, ListGroupItemText, ListGroupItemHeading} from 'reactstrap';
 
 const CartPage = (props) => {
-    const cardStyle = {
-        width: "30%",
-        padding: "10px",
-        margin: "auto"
-    };
-    const bodyStyle = {
-        padding: "50px",
-        display: "top"
-    };
-    return (
+    const listStyle = {
+        padding: "20px 30% 20px 20px"
+    }
+    return(
         <div className="App">
-            <Container fluid={true} style={bodyStyle}>
-                <Row>
-                    <Card style={cardStyle}>
-                        <CardBody>
-                            <Form>
-                                <FormGroup>
-                                    <Label for="exampleEmail">Email</Label>
-                                    <Input type="email" name="email" id="exampleEmail" placeholder="Enter your email here" />
-                                </FormGroup>
-                                <FormGroup>
-                                    <Label for="examplePassword">Password</Label>
-                                    <Input type="password" name="password" id="examplePassword" placeholder="Enter your password here" />
-                                </FormGroup>
-                                <Button>Submit</Button>
-                            </Form>
-                        </CardBody>
-                    </Card>
-                </Row>
-            </Container>
+            <ListGroup style={listStyle}>
+                <ListGroupItem active>
+                    <Row>
+                        <Col sm={4}>
+                            <img src={props.items[0][0]} style={{height:"100px"}}/>
+                        </Col>
+                        <Col sm={8}>
+                            <ListGroupItemHeading>List group item heading</ListGroupItemHeading>
+                            <ListGroupItemText>
+                                Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.
+                            </ListGroupItemText>
+                        </Col>
+                    </Row>
+                </ListGroupItem>
+            </ListGroup>
         </div>
     );
+<<<<<<< HEAD
 }
+=======
+};
 
+>>>>>>> b702e827f3621b13d8e76824a44ba6771555c0ff
 export default CartPage;
