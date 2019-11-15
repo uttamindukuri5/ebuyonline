@@ -4,7 +4,10 @@ import {
     Form, FormGroup,
     Label, Input, Card, CardBody, Container, Row
 } from 'reactstrap';
-
+import {
+    BrowserRouter as Router,
+    Link
+} from "react-router-dom";
 const LoginPage = (props) => {
     const cardStyle = {
         width: "30%",
@@ -40,7 +43,9 @@ const LoginPage = (props) => {
                                     <Label for="examplePassword">Password</Label>
                                     <Input type="password" name="password" id="examplePassword" placeholder="Enter your password here" />
                                 </FormGroup>
-                                <Button>Submit</Button>
+                                <Link to="HomePage">
+                                    <Button>Submit</Button>
+                                </Link>
                             </Form>
                         </CardBody>
                     </Card>

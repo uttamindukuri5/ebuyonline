@@ -3,7 +3,10 @@ import { Row, Col, Breadcrumb, BreadcrumbItem} from 'reactstrap'
 import DisplayImage from './DisplayObjectImage';
 import ObjectDescription from './ObjectDescription';
 import ObjectPrice from './ObjectPrice';
-
+import {
+    BrowserRouter as Router,
+    Link
+} from "react-router-dom";
 const objectPage = ( props ) => {
     const boxStyle = {
         padding: '3%',

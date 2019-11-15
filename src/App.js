@@ -7,6 +7,11 @@ import HomePage from "./HomePage/HomePage";
 import LoginPage from "./LoginPage/LoginPage";
 import SignUpPage from "./SignUpPage/SignUpPage";
 import CartPage from "./CartPage/CartPage";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+}from "react-router-dom";
 
 function App() {
   const [price, setPrice] = useState({
@@ -77,35 +82,52 @@ function App() {
       "https://www.vets4pets.com/siteassets/species/cat/kitten/tiny-kitten-in-field.jpg?width=1040",
       10
     ],
-    ["https://i.ytimg.com/vi/BCr7y4SLhck/maxresdefault.jpg", 10],
+    ["https://i.ytimg.com/vi/BCr7y4SLhck/maxresdefault.jpg",
+      10
+    ],
     [
       "https://dotesports-media.nyc3.cdn.digitaloceanspaces.com/wp-content/uploads/2019/10/18142643/senna.jpg",
       10
     ]
   ];
+
   return (
     <div className="App" style={backgroundStyle}>
       <Navbar />
-      {/*<CartPage*/}
-      {/*    items = {list_items}*/}
-      {/*/>*/}
-      {/*<LoginPage />*/}
-      {/*    logo="https://www.ebuyonline.co.uk/img/ebuy-online-ltd-logo-1525558004.jpg"*/}
-      {/*/>*/}
-      {/*<HomePage*/}
-      {/*    logo="https://www.ebuyonline.co.uk/img/ebuy-online-ltd-logo-1525558004.jpg"*/}
-      {/*    cart="https://icons-for-free.com/iconfiles/png/512/cart-131964784999299812.png"*/}
-      {/*    login="https://www.trzcacak.rs/myfile/detail/3-39618_login-icon-with-transparent-background.png"*/}
-      {/*    img="https://c402277.ssl.cf1.rackcdn.com/photos/14785/images/story_full_width/shutterstock_532108075.jpg?1512507049"*/}
-      {/*    items = {list_items}/>*/}
-      <ObjectPage
-        img="https://c402277.ssl.cf1.rackcdn.com/photos/14785/images/story_full_width/shutterstock_532108075.jpg?1512507049"
-        currentPriceOption={price.priceOption}
-        changePriceOption={priceOptionHandler}
-        price={price.price}
-        quantity={price.quantity}
-        changeQuantity={quantityHandler}
-      />
+      <Router>
+        <Switch>
+          <Route path="/CartPage">
+            <CartPage
+              items = {list_items}
+              quantity={price.quantity}/>
+          </Route>
+          <Route path="/LoginPage">
+            <LoginPage
+              logo="https://www.ebuyonline.co.uk/img/ebuy-online-ltd-logo-1525558004.jpg"/>
+          </Route>
+          <Route exact path="/">
+              <HomePage
+                logo="https://www.ebuyonline.co.uk/img/ebuy-online-ltd-logo-1525558004.jpg"
+                cart="https://icons-for-free.com/iconfiles/png/512/cart-131964784999299812.png"
+                login="https://www.trzcacak.rs/myfile/detail/3-39618_login-icon-with-transparent-background.png"
+                img="https://c402277.ssl.cf1.rackcdn.com/photos/14785/images/story_full_width/shutterstock_532108075.jpg?1512507049"
+                items = {list_items}/>
+          </Route>
+          <Route path="/ObjectPage">
+            <ObjectPage
+            img="https://c402277.ssl.cf1.rackcdn.com/photos/14785/images/story_full_width/shutterstock_532108075.jpg?1512507049"
+            currentPriceOption={price.priceOption}
+            changePriceOption={priceOptionHandler}
+            price={price.price}
+            quantity={price.quantity}
+            changeQuantity={quantityHandler}/>
+          </Route>
+          <Route path="/SignUpPage">
+            <SignUpPage
+            logo="https://www.ebuyonline.co.uk/img/ebuy-online-ltd-logo-1525558004.jpg"/>
+          </Route>
+        </Switch>
+      </Router>
       <Footer />
     </div>
   );

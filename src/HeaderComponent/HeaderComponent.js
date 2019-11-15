@@ -14,7 +14,10 @@ import {
     DropdownMenu,
     DropdownItem, Col
 } from 'reactstrap';
-
+import {
+    BrowserRouter as Router,
+    Link
+} from "react-router-dom";
 const headerComponent = ( props ) => {
     const searchStyle = {
         width: "100%"
@@ -38,24 +41,25 @@ const headerComponent = ( props ) => {
                     </Col>
                     <Nav className="ml-auto" navbar>
                         <NavItem>
-                            <NavLink href="/components/">
+                            <NavLink href="CartPage">
                                 <FontAwesomeIcon icon={faShoppingCart} size='2x' color='white'/>
                             </NavLink>
-                        </NavItem>
-                        <UncontrolledDropdown nav inNavbar>
-                            <DropdownToggle nav caret >
-                                <FontAwesomeIcon icon={faUserCircle} size='2x' color='white'/>
-                            </DropdownToggle>
-                            <DropdownMenu right>
-                                <DropdownItem>
-                                    Account Profile
-                                </DropdownItem>
-                                <DropdownItem divider />
+                        </NavItem>                        <UncontrolledDropdown nav inNavbar>
+                        <DropdownToggle nav caret >
+                            <FontAwesomeIcon icon={faUserCircle} size='2x' color='white'/>
+                        </DropdownToggle>
+                        <DropdownMenu right>
+                            <DropdownItem>
+                                Account Profile
+                            </DropdownItem>
+                            <DropdownItem divider />
+                            <a href="HomePage">
                                 <DropdownItem>
                                     Log Out
                                 </DropdownItem>
-                            </DropdownMenu>
-                        </UncontrolledDropdown>
+                            </a>
+                        </DropdownMenu>
+                    </UncontrolledDropdown>
                     </Nav>
                 </Collapse>
             </Navbar>

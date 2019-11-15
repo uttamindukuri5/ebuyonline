@@ -1,4 +1,8 @@
 import React from 'react';
+import {
+    BrowserRouter as Router,
+    Link
+} from "react-router-dom";
 import {Row, Col,
     Button,
     Container,
@@ -9,14 +13,9 @@ const HomePage = (props) => {
         padding: "20px 17.5% 20px 17.5%"
     };
     const cardStyle = {
-<<<<<<< HEAD
         marginBottom: "10px",
         marginLeft: "-20px"
-    }
-=======
-        marginBottom: "10px"
     };
->>>>>>> b702e827f3621b13d8e76824a44ba6771555c0ff
 
     let store_col_1 = [];
     for(let i = 0; i < props.items.length; i++) {
@@ -27,7 +26,9 @@ const HomePage = (props) => {
                     <CardBody>
                         <CardTitle>Sloth for sale!</CardTitle>
                         <CardText>This sloth costs ${props.items[i][2]}</CardText>
-                        <Button href={props.items[i][0]} color="primary">Link</Button>
+                        <Link to="ObjectPage">
+                            <Button href={props.items[i][0]} color="primary">Link</Button>
+                        </Link>
                     </CardBody>
                 </Card>)
         }
@@ -41,7 +42,9 @@ const HomePage = (props) => {
                     <CardBody>
                         <CardTitle>Sloth for sale!</CardTitle>
                         <CardText>This sloth costs ${props.items[i][2]}</CardText>
-                        <Button href={props.items[i][0]} color="primary">Link</Button>
+                        <Link to="ObjectPage">
+                            <Button href={props.items[i][0]} color="primary">Link</Button>
+                        </Link>
                     </CardBody>
                 </Card>)
         }
@@ -55,21 +58,25 @@ const HomePage = (props) => {
                     <CardBody>
                         <CardTitle>Sloth for sale!</CardTitle>
                         <CardText>This sloth costs ${props.items[i][2]}</CardText>
-                        <Button href={props.items[i][0]} color="primary">Link</Button>
+                        <Link to="ObjectPage">
+                            <Button href={props.items[i][0]} color="primary">Link</Button>
+                        </Link>
                     </CardBody>
                 </Card>)
         }
     }
     let store_col_4 = [];
     for(let i = 0; i < props.items.length; i++) {
-        if(i % 4 === 3) {
+        if (i % 4 === 3) {
             store_col_4.push(
                 <Card style={cardStyle}>
                     <img src={props.items[i][0]} className='card-img-top'/>
                     <CardBody>
                         <CardTitle>Sloth for sale!</CardTitle>
                         <CardText>This sloth costs ${props.items[i][2]}</CardText>
-                        <Button href={props.items[i][0]} color="primary">Link</Button>
+                        <Link to="ObjectPage">
+                            <Button href={props.items[i][0]} color="primary">Link</Button>
+                        </Link>
                     </CardBody>
                 </Card>)
         }

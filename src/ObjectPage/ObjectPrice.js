@@ -2,7 +2,10 @@ import React from 'react';
 import {Badge, Button, Col, Input, Label, Row} from "reactstrap";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faShoppingCart} from "@fortawesome/free-solid-svg-icons";
-
+import {
+    BrowserRouter as Router,
+    Link
+} from "react-router-dom";
 const objectPrice = (props) => {
 
     const buttonStyle = {
@@ -26,9 +29,11 @@ const objectPrice = (props) => {
       <div className='shadow p-3 mb-5 bg-white rounded'>
           <h4>${ props.price }</h4>
           <hr />
-          <Button color='warning' style={buttonStyle}>
-              Add to Cart <FontAwesomeIcon icon={faShoppingCart} size='1x' color='black'/>
-          </Button>
+          <Link to="CartPage">
+              <Button color='warning' style={buttonStyle}>
+                  Add to Cart <FontAwesomeIcon icon={faShoppingCart} size='1x' color='black'/>
+              </Button>
+          </Link>
           <hr />
           <div>
               <Row>

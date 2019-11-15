@@ -3,7 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="b3898cfd-c460-4359-801c-e0c27b57d513" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CartPage/CartPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/CartPage/CartPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HeaderComponent/HeaderComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/HeaderComponent/HeaderComponent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HomePage/HomePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/HomePage/HomePage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LoginPage/LoginPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/LoginPage/LoginPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ObjectPage/ObjectPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/ObjectPage/ObjectPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ObjectPage/ObjectPrice.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/ObjectPage/ObjectPrice.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SignUpPage/SignUpPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/SignUpPage/SignUpPage.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -36,7 +45,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Fump" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -120,6 +129,11 @@
       <workItem from="1572554127037" duration="4038000" />
       <workItem from="1572566011176" duration="43000" />
       <workItem from="1573332614465" duration="1319000" />
+      <workItem from="1573539841490" duration="4752000" />
+      <workItem from="1573575749777" duration="4155000" />
+      <workItem from="1573594915513" duration="5660000" />
+      <workItem from="1573666492542" duration="8614000" />
+      <workItem from="1573768131060" duration="3658000" />
     </task>
     <task id="LOCAL-00001" summary="Centered the footer navbar text and added About in footer navbar">
       <created>1570636398901</created>

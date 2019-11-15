@@ -1,13 +1,27 @@
 import React from 'react';
 import {AvForm, AvField} from 'availity-reactstrap-validation';
 import {Col, Button, Badge, Form, FormGroup, Label, Input, FormText, Container, Card, CardBody} from 'reactstrap';
-
+import {
+    BrowserRouter as Router,
+    Link
+} from "react-router-dom";
 const SignUpPage = (props) => {
+    const containerStyle = {
+        // border:"solid",
+        // borderColor: "rgba(0,0,0,.125)",
+        width: "50%",
+        marginBottom: "20px",
+        marginTop: "20px"
+    }
+    const labelStyle = {
+        marginLeft: "10px"
+    }
+
     return (
-        <Container>
+        <Container style={containerStyle}>
             <Form>
-                <h1>Sign Up <Badge color="secondary"></Badge></h1>
-                <Card>
+                <img style={{width:"75%"}} src={props.logo}/>
+                <Card style={{margin:"10px -16px 0px -16px"}}>
                     <CardBody>
                         <AvForm>
                             <AvField name="name" label="Enter Full Name" type="text" errorMessage="Invalid name"
@@ -60,7 +74,9 @@ const SignUpPage = (props) => {
                         </FormGroup>
                         <FormGroup check row>
                             <Col sm={{size: 20, offset: 0.5}}>
-                                <Button>Submit</Button>
+                                <Link to="LoginPage">
+                                    <Button>Submit</Button>
+                                </Link>
                             </Col>
                         </FormGroup>
                     </CardBody>
