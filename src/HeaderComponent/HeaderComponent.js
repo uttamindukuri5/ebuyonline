@@ -49,7 +49,7 @@ const headerComponent = ( props ) => {
                             <FontAwesomeIcon icon={faUserCircle} size='2x' color='white'/>
                         </DropdownToggle>
                         <DropdownMenu right>
-                            <a href="HomePage">
+                            <a href="LoginPage">
                                 <DropdownItem>
                                     Sign in
                                 </DropdownItem>
