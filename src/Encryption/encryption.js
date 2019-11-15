@@ -7,9 +7,9 @@ function rot13cipher(str, k) {
     var ZCode = 'Z'.charCodeAt(0);  // Ending Point (uppercase).
     var nCode = 'n'.charCodeAt(0);  // Mid Point (lowercase).
     var NCode = 'N'.charCodeAt(0);  // Mid Point (uppercase).
-    var retString = "";
-    for (var i = 0; i < str.length; i++) {
-        var chr = str.charCodeAt(i);
+    let retString = "";
+    for (let i = 0; i < str.length; i++) {
+        let chr = str.charCodeAt(i);
         if (chr >= ACode && chr <= ZCode) {
             if (chr >= NCode)
                 retString = retString.concat(String.fromCharCode(chr - 13));
@@ -29,8 +29,8 @@ function rot13cipher(str, k) {
 }
 
 function secondLevel(str, k) {
-    var hex = "";
-    var flag = false;
+    let hex = "";
+    let flag = false;
     for (var i = 0; i < str.length; i++) {
         if (!flag)
             hex += (str.charCodeAt(i) + k*73).toString(16);
@@ -46,6 +46,8 @@ function secondLevel(str, k) {
 function passEncrypt(str, k) {
     return rot13cipher(str, k);
 }
+
+module.exports = {passEncrypt}
 
 // DO NOT INCLUDE IT IN SOURCE CODE. TEST CASE ONLY.
 console.log("Test case")
