@@ -2,17 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b3898cfd-c460-4359-801c-e0c27b57d513" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CartPage/CartPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/CartPage/CartPage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/HeaderComponent/HeaderComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/HeaderComponent/HeaderComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/HomePage/HomePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/HomePage/HomePage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LoginPage/LoginPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/LoginPage/LoginPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ObjectPage/ObjectPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/ObjectPage/ObjectPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ObjectPage/ObjectPrice.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/ObjectPage/ObjectPrice.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SignUpPage/SignUpPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/SignUpPage/SignUpPage.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
