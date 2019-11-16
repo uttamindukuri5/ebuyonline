@@ -14,7 +14,6 @@ const SignUpPage = () => {
         phone: 0,
         cardNumber: 0,
         cvv: 0,
-        passHash:''
     });
     const [hasErrors, setErrors] = useState(false);
 
@@ -55,9 +54,7 @@ const SignUpPage = () => {
         console.log(user);
         event.preventDefault();
         let val = encrypt.passEncrypt(user.password, 5);
-        console.log(val);
-        user.passHash = val;
-        //setUser({ ...user, passHash: val})
+        user.password= val;
         console.log(user);
     };
     const { fullName, email, password, DOB, phone, cardNumber, cvv } = user;
