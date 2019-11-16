@@ -1,4 +1,5 @@
-import React from 'react';
+import React,{useState} from 'react';
+
 import {
     Button,
     Form, FormGroup,
@@ -8,6 +9,7 @@ import {
     BrowserRouter as Router,
     Link
 } from "react-router-dom";
+const encrypt = require('../Encryption/encryption');
 const LoginPage = (props) => {
     const cardStyle = {
         width: "30%",
@@ -25,6 +27,7 @@ const LoginPage = (props) => {
         height: "25%",
         marginBottom: "10px"
     };
+
     return (
         <div className="App">
             <Container fluid={true} style={bodyStyle}>
@@ -37,11 +40,11 @@ const LoginPage = (props) => {
                             <Form>
                                 <FormGroup>
                                     <Label for="exampleEmail">Email</Label>
-                                    <Input type="email" name="email" id="exampleEmail" placeholder="Enter your email here" />
+                                    <Input type="email" name="email" id="exampleEmail" placeholder="Enter your email here"/>
                                 </FormGroup>
                                 <FormGroup>
                                     <Label for="examplePassword">Password</Label>
-                                    <Input type="password" name="password" id="examplePassword" placeholder="Enter your password here" />
+                                    <Input type="password" name="password" id="examplePassword" placeholder="Enter your password here"/>
                                 </FormGroup>
                                 <Link to="HomePage">
                                     <Button>Submit</Button>
