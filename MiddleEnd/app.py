@@ -6,7 +6,7 @@ from bson import json_util
 import json
 
 app = Flask(__name__)
-client = MongoClient('mongodb://db:27017')
+client = MongoClient('mongodb://root:secret@db:27017')
 db = client.ebuy
 CORS(app)
 

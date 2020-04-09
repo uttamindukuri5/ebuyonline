@@ -1,13 +1,11 @@
-FROM node:latest
 
-RUN mkdir -p /usr/src/app
-WORKDIR /usr/src/app
+FROM node:alpine
 
-COPY package.json /usr/src/app/
-ADD src /usr/src/app/src
-ADD public /usr/src/app/public
-
-RUN npm install
-
+WORKDIR /opt/node_app
+COPY package.json package-lock.json* ./
+RUN npm install --no-optional && npm cache clean --force
+ENV PATH /opt/node_app/node_modules/.bin:$PATH
+WORKDIR /opt/node_app/app
+COPY . .
 EXPOSE 3000
 CMD ["npm", "start"]

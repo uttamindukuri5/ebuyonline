@@ -1,12 +1,19 @@
 version: "3"
 services:
   db:
-    image: mongo:4.0-xenial
-    restart: always
+    user: $UID
+    image: mongo
     ports:
       - "27017:27017"
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: secret
+      MONGO_INITDB_DATABASE: ebuyonline
+      MONGO_USERNAME: ebuy
+      MONGO_PASSWORD: online
     volumes:
-      - mongodata:/data/db
+      - ./data:/data/db
+      - ./mongo-init.sh:/docker-entrypoint-initdb.d/mongo-init.sh:ro
   api:
     build: ./MiddleEnd
     command: python -u app.py
@@ -19,7 +26,7 @@ services:
   client:
     build: ./FrontEnd
     volumes:
-      - ./FrontEnd:/usr/src/app
+      - ./FrontEnd:/opt/node_app/app
     ports:
       - "3000:3000"
     links:
