@@ -24,11 +24,15 @@ services:
     links:
       - db
   client:
-    build: ./FrontEnd
+    build:
+      context: ./FrontEnd
+      dockerfile: Dockerfile
     volumes:
-      - ./FrontEnd:/opt/node_app/app
+        - /app/node_modules
+        - ./FrontEnd:/app
     ports:
-      - "3000:3000"
+        - '8080:8080'
+    restart: on-failure
     links:
       - api
 volumes:

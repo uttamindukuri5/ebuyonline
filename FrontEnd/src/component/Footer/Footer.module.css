@@ -1,0 +1,15 @@
+#main {
+    position: absolute;
+    text-align: center;
+    color: white;
+    bottom: 0;
+    width: 100%
+}
+
+.text {
+    display: center;
+}
+
+.grid {
+    width: 100%;
+}

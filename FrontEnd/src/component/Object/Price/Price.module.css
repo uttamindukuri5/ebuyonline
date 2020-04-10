@@ -1,0 +1,16 @@
+#button {
+    width: 100%;
+}
+
+.price {
+    text-align: right;
+}
+
+.option {
+    text-align: left;
+    padding-left: 40px;
+}
+
+#quantity {
+    text-align: left;
+}

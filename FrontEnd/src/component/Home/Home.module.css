@@ -1,0 +1,10 @@
+#card {
+    width: 33%;
+    padding: 10px;
+    margin: auto;
+}
+
+#body {
+    padding: 10px 10% 13px 10%; 
+    display: top;
+}
