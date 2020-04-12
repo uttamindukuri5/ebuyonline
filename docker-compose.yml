@@ -1,19 +1,18 @@
 version: "3"
 services:
   db:
-    user: $UID
     image: mongo
-    ports:
-      - "27017:27017"
     environment:
+      # set username and password  
       MONGO_INITDB_ROOT_USERNAME: root
-      MONGO_INITDB_ROOT_PASSWORD: secret
-      MONGO_INITDB_DATABASE: ebuyonline
-      MONGO_USERNAME: ebuy
-      MONGO_PASSWORD: online
+      MONGO_INITDB_ROOT_PASSWORD: rootpassword
+    # set port  
+    ports:
+      - 27017:27017
+    # set volume  
     volumes:
       - ./data:/data/db
-      - ./mongo-init.sh:/docker-entrypoint-initdb.d/mongo-init.sh:ro
+    restart: always
   api:
     build: ./MiddleEnd
     command: python -u app.py
@@ -35,5 +34,5 @@ services:
     restart: on-failure
     links:
       - api
-volumes:
-  mongodata:
+
+      

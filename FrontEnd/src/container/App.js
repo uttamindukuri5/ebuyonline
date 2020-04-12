@@ -4,10 +4,17 @@ import Header from '../component/Header/Header';
 import Footer from '../component/Footer/Footer';
 import Home from '../component/Home/Home';
 import Object from '../component/Object/Main/Object';
+import RegisterProduct from '../component/Object/Register/Register';
 
 export default () => {
     const
     [ object, setObject ] = useState({}),
+    [ name, setName ] = useState(''),
+    [ image, setImage ] = useState([]),
+    [ oldPrice, setOldPrice ] = useState(0.00),
+    [ newPrice, setNewPrice ] = useState(0.00),
+    [ description, setDescription ] = useState(''),
+    [ features, setFeatures ] = useState([]),
     [ hasErrors, setErrors ] = useState(false),
     [ price, setPrice ] = useState({
         priceOption: 'new',
@@ -28,7 +35,25 @@ export default () => {
         initialPrice = priceOption === 'new' ? 598.23 : 478.13,
         quantity = value;
         setPrice({quantity, price: (initialPrice * quantity), priceOption});
-    };
+    },
+    nameHandler = (value) => setName(value),
+    imageHandler = (value) => setImage([...image, value.split(',')]),
+    oldPriceHandler = (value) => setOldPrice(value),
+    newPriceHandler = (value) => setNewPrice(value),
+    descriptionHandler = (value) => setDescription(value),
+    featureHandler = (value) => setFeatures([...features, value.split(',')]),
+    postProduct = (e) => {
+        e.preventDefault();
+        const data = {
+            name,
+            img: image[image.length - 1],
+            newPrice,
+            oldPrice,
+            description,
+            features: features[features.length - 1]
+        }
+        console.log(data);
+    }
 
     let listObject;
     if (object.length > 0) {
@@ -55,13 +80,28 @@ export default () => {
     return (
         <div className="App" style={background}>
             <Header />
-            { listObject }
+            {/* { listObject }
             <Object img='https://c402277.ssl.cf1.rackcdn.com/photos/14785/images/story_full_width/shutterstock_532108075.jpg?1512507049'
                         currentPriceOption={price.priceOption}
                         changePriceOption={priceOptionHandler}
                         price={price.price}
                         quantity={price.quantity}
                         changeQuantity={quantityHandler}
+            /> */}
+            <RegisterProduct 
+                name={name}
+                img={image}
+                newPrice={newPrice}
+                oldPrice={oldPrice}
+                description={description}
+                features={features}
+                nameChange={nameHandler}
+                imageChange={imageHandler}
+                newPriceChange={newPriceHandler}
+                oldPriceChange={oldPriceHandler}
+                descriptionChange={descriptionHandler}
+                featureChange={featureHandler}
+                submitProduct={postProduct}
             />
             <Footer />
         </div>

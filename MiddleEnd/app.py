@@ -6,16 +6,27 @@ from bson import json_util
 import json
 
 app = Flask(__name__)
-client = MongoClient('mongodb://root:secret@db:27017')
-db = client.ebuy
+client = MongoClient('mongodb://root:rootpassword@db:27017')
+db = client.ebuyonline
 CORS(app)
 
 @app.route('/', methods=['GET'])
 def get_all_objects():
-    objects = db.object
+    products = db.products
     results = []
-    for field in objects.find():
-        results.append({'object_id': str(field['_id']), 'name': field['name'], 'img': field['image'],
+    for field in products.find():
+        results.append({'product_id': str(field['_id']), 'name': field['name'], 'img': field['img'],
+                        'newPrice': field['newPrice'], 'oldPrice': field['oldPrice'],
+                        'description': field['description'],
+                        'features': field['features']})
+    return jsonify(results)
+
+@app.route('/submitProduct', methods=['POST'])
+def get_all_objects():
+    products = db.products
+    results = []
+    for field in products.find():
+        results.append({'product_id': str(field['_id']), 'name': field['name'], 'img': field['img'],
                         'newPrice': field['newPrice'], 'oldPrice': field['oldPrice'],
                         'description': field['description'],
                         'features': field['features']})
