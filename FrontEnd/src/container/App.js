@@ -7,14 +7,19 @@ import Object from '../component/Object/Main/Object';
 import RegisterProduct from '../component/Object/Register/Register';
 
 export default () => {
+    const headers = {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+    };
+
     const
     [ object, setObject ] = useState({}),
     [ name, setName ] = useState(''),
-    [ image, setImage ] = useState([]),
+    [ image, setImage ] = useState(''),
     [ oldPrice, setOldPrice ] = useState(0.00),
     [ newPrice, setNewPrice ] = useState(0.00),
     [ description, setDescription ] = useState(''),
-    [ features, setFeatures ] = useState([]),
+    [ features, setFeatures ] = useState(''),
     [ hasErrors, setErrors ] = useState(false),
     [ price, setPrice ] = useState({
         priceOption: 'new',
@@ -37,22 +42,28 @@ export default () => {
         setPrice({quantity, price: (initialPrice * quantity), priceOption});
     },
     nameHandler = (value) => setName(value),
-    imageHandler = (value) => setImage([...image, value.split(',')]),
+    imageHandler = (value) => setImage(value),
     oldPriceHandler = (value) => setOldPrice(value),
     newPriceHandler = (value) => setNewPrice(value),
     descriptionHandler = (value) => setDescription(value),
-    featureHandler = (value) => setFeatures([...features, value.split(',')]),
-    postProduct = (e) => {
+    featureHandler = (value) => setFeatures(value),
+    postProduct = async (e) => {
         e.preventDefault();
         const data = {
             name,
-            img: image[image.length - 1],
+            img: image.split(','),
             newPrice,
             oldPrice,
             description,
-            features: features[features.length - 1]
-        }
-        console.log(data);
+            features: features.split(',')
+        },
+        response = await fetch('http://localhost:5000/submitProduct', {
+            headers,
+            mode: 'no-cors',
+            method: 'POST',
+            body: data
+        });
+        console.log(response);
     }
 
     let listObject;
@@ -64,17 +75,13 @@ export default () => {
             />
         );
     }
-    try {
-        useEffect(async () => {
-            const response = await fetch('http://localhost:5000/');
-            await response
-                .json()
-                .then(res => setObject(res))
-                .catch(err => setErrors(err));
-        }, []);
-    } catch (err) {
-        console.log(err);
-    }
+    useEffect(async () => {
+        const response = await fetch('http://localhost:5000/');
+        await response
+            .json()
+            .then(res => setObject(res))
+            .catch(err => setErrors(err));
+    }, []);
     
 
     return (

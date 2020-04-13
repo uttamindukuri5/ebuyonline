@@ -22,15 +22,25 @@ def get_all_objects():
     return jsonify(results)
 
 @app.route('/submitProduct', methods=['POST'])
-def get_all_objects():
+def submit_product():
     products = db.products
-    results = []
-    for field in products.find():
-        results.append({'product_id': str(field['_id']), 'name': field['name'], 'img': field['img'],
-                        'newPrice': field['newPrice'], 'oldPrice': field['oldPrice'],
-                        'description': field['description'],
-                        'features': field['features']})
-    return jsonify(results)
+    name = request.form['name']
+    img = request.form['img']
+    newPrice = request.form['newPrice']
+    oldPrice = request.form['oldPrice']
+    description = request.form['description']
+    features = request.form['features']
+    product = {
+        "name": name,
+        "img": img,
+        "newPrice": newPrice,
+        "oldPrice": oldPrice,
+        "description": description,
+        "features": features
+    }
+    print(product)
+    products.insert(product)
+    return '200'
 
 
 @app.route('/<object_id>', methods=['GET'])

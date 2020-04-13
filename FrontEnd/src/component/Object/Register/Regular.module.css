@@ -1,0 +1,20 @@
+#formProduct {
+	justify-content: center;
+	margin-top: 10%;
+}
+
+#input {
+	width: 50%;
+}
+
+#priceLabel {
+	justify-content: center;
+}
+
+#newPriceLabel {
+	margin-right: 22%;
+}
+
+#cardTitle {
+	margin-top: 3%;
+}
