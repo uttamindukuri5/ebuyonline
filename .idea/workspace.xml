@@ -2,32 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="43b66c40-e9a1-4f23-8eea-9565faf92524" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/data/diagnostic.data/metrics.2020-04-13T06-41-59Z-00000" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/diagnostic.data/metrics.2020-04-13T06-45-45Z-00000" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/diagnostic.data/metrics.2020-04-13T06-46-59Z-00000" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/diagnostic.data/metrics.2020-04-13T06-50-35Z-00000" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/diagnostic.data/metrics.2020-04-13T06-54-44Z-00000" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/diagnostic.data/metrics.2020-04-13T06-56-08Z-00000" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/diagnostic.data/metrics.2020-04-13T07-00-30Z-00000" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/diagnostic.data/metrics.interim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/journal/WiredTigerLog.0000000014" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/diagnostic.data/metrics.2020-04-13T18-07-26Z-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/diagnostic.data/metrics.2020-04-13T18-54-25Z-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/diagnostic.data/metrics.2020-04-13T18-57-05Z-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/diagnostic.data/metrics.2020-04-13T18-59-05Z-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/diagnostic.data/metrics.2020-04-13T19-01-41Z-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/diagnostic.data/metrics.2020-04-13T19-07-33Z-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/diagnostic.data/metrics.2020-04-13T19-08-32Z-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/journal/WiredTigerLog.0000000021" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/dist/bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/dist/bundle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/dist/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/src/component/Object/Register/Register.js" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/src/component/Object/Register/Register.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/src/component/Object/Register/Regular.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/src/component/Object/Register/Regular.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FrontEnd/src/container/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/src/container/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/src/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MiddleEnd/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/MiddleEnd/app.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/WiredTiger.turtle" beforeDir="false" afterPath="$PROJECT_DIR$/data/WiredTiger.turtle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/WiredTiger.wt" beforeDir="false" afterPath="$PROJECT_DIR$/data/WiredTiger.wt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/collection-0--3384015891430346748.wt" beforeDir="false" afterPath="$PROJECT_DIR$/data/collection-0--3384015891430346748.wt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/collection-2--5489847082833129224.wt" beforeDir="false" afterPath="$PROJECT_DIR$/data/collection-2--5489847082833129224.wt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/collection-4--5489847082833129224.wt" beforeDir="false" afterPath="$PROJECT_DIR$/data/collection-4--5489847082833129224.wt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/index-1--3384015891430346748.wt" beforeDir="false" afterPath="$PROJECT_DIR$/data/index-1--3384015891430346748.wt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/index-3--5489847082833129224.wt" beforeDir="false" afterPath="$PROJECT_DIR$/data/index-3--5489847082833129224.wt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/index-5--5489847082833129224.wt" beforeDir="false" afterPath="$PROJECT_DIR$/data/index-5--5489847082833129224.wt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/index-6--5489847082833129224.wt" beforeDir="false" afterPath="$PROJECT_DIR$/data/index-6--5489847082833129224.wt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/journal/WiredTigerLog.0000000007" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/mongod.lock" beforeDir="false" afterPath="$PROJECT_DIR$/data/mongod.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/journal/WiredTigerLog.0000000014" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/data/sizeStorer.wt" beforeDir="false" afterPath="$PROJECT_DIR$/data/sizeStorer.wt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -287,7 +282,9 @@
       <workItem from="1573092892507" duration="705000" />
       <workItem from="1573097649155" duration="609000" />
       <workItem from="1586726853343" duration="146000" />
-      <workItem from="1586727018428" duration="8592000" />
+      <workItem from="1586727018428" duration="9343000" />
+      <workItem from="1586801015314" duration="2027000" />
+      <workItem from="1586805286114" duration="654000" />
     </task>
     <task id="LOCAL-00001" summary="Centered the footer navbar text and added About in footer navbar">
       <created>1570636398901</created>
@@ -370,25 +367,25 @@
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state x="577" y="250" key="#npm_start/0.0.1792.1120@0.0.1792.1120" timestamp="1586727123207" />
-    <state width="2539" height="313" key="GridCell.Tab.0.bottom" timestamp="1586760083959">
+    <state width="2539" height="313" key="GridCell.Tab.0.bottom" timestamp="1586762132261">
       <screen x="1792" y="-36" width="2560" height="1440" />
     </state>
-    <state width="2539" height="313" key="GridCell.Tab.0.bottom/0.0.1792.1120/1792.-36.2560.1440@1792.-36.2560.1440" timestamp="1586760083959" />
+    <state width="2539" height="313" key="GridCell.Tab.0.bottom/0.0.1792.1120/1792.-36.2560.1440@1792.-36.2560.1440" timestamp="1586762132261" />
     <state width="2539" height="313" key="GridCell.Tab.0.bottom/0.23.1792.1097/1792.-36.2560.1440@1792.-36.2560.1440" timestamp="1586748602090" />
-    <state width="2539" height="313" key="GridCell.Tab.0.center" timestamp="1586760083958">
+    <state width="2539" height="313" key="GridCell.Tab.0.center" timestamp="1586762132260">
       <screen x="1792" y="-36" width="2560" height="1440" />
     </state>
-    <state width="2539" height="313" key="GridCell.Tab.0.center/0.0.1792.1120/1792.-36.2560.1440@1792.-36.2560.1440" timestamp="1586760083958" />
+    <state width="2539" height="313" key="GridCell.Tab.0.center/0.0.1792.1120/1792.-36.2560.1440@1792.-36.2560.1440" timestamp="1586762132260" />
     <state width="2539" height="313" key="GridCell.Tab.0.center/0.23.1792.1097/1792.-36.2560.1440@1792.-36.2560.1440" timestamp="1586748602088" />
-    <state width="2539" height="313" key="GridCell.Tab.0.left" timestamp="1586760083958">
+    <state width="2539" height="313" key="GridCell.Tab.0.left" timestamp="1586762132259">
       <screen x="1792" y="-36" width="2560" height="1440" />
     </state>
-    <state width="2539" height="313" key="GridCell.Tab.0.left/0.0.1792.1120/1792.-36.2560.1440@1792.-36.2560.1440" timestamp="1586760083958" />
+    <state width="2539" height="313" key="GridCell.Tab.0.left/0.0.1792.1120/1792.-36.2560.1440@1792.-36.2560.1440" timestamp="1586762132259" />
     <state width="2539" height="313" key="GridCell.Tab.0.left/0.23.1792.1097/1792.-36.2560.1440@1792.-36.2560.1440" timestamp="1586748602087" />
-    <state width="2539" height="313" key="GridCell.Tab.0.right" timestamp="1586760083959">
+    <state width="2539" height="313" key="GridCell.Tab.0.right" timestamp="1586762132261">
       <screen x="1792" y="-36" width="2560" height="1440" />
     </state>
-    <state width="2539" height="313" key="GridCell.Tab.0.right/0.0.1792.1120/1792.-36.2560.1440@1792.-36.2560.1440" timestamp="1586760083959" />
+    <state width="2539" height="313" key="GridCell.Tab.0.right/0.0.1792.1120/1792.-36.2560.1440@1792.-36.2560.1440" timestamp="1586762132261" />
     <state width="2539" height="313" key="GridCell.Tab.0.right/0.23.1792.1097/1792.-36.2560.1440@1792.-36.2560.1440" timestamp="1586748602089" />
     <state x="484" y="302" key="IDE.errors.dialog" timestamp="1586726934337">
       <screen x="0" y="0" width="1792" height="1120" />

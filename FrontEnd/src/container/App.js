@@ -8,8 +8,7 @@ import RegisterProduct from '../component/Object/Register/Register';
 
 export default () => {
     const headers = {
-        'Accept': 'application/json',
-        'Content-Type': 'application/json'
+        'Content-Type': 'multipart/form-data'
     };
 
     const
@@ -49,21 +48,24 @@ export default () => {
     featureHandler = (value) => setFeatures(value),
     postProduct = async (e) => {
         e.preventDefault();
-        const data = {
-            name,
-            img: image.split(','),
-            newPrice,
-            oldPrice,
-            description,
-            features: features.split(',')
-        },
-        response = await fetch('http://localhost:5000/submitProduct', {
-            headers,
-            mode: 'no-cors',
+        const formData = new FormData();
+        formData.append("name", name);
+        formData.append("img", image);
+        formData.append("newPrice", newPrice.toString());
+        formData.append("oldPrice", oldPrice.toString());
+        formData.append("description", description);
+        formData.append("features", features);
+
+        const requestOptions = {
             method: 'POST',
-            body: data
-        });
-        console.log(response);
+            body: formData,
+            redirect: 'follow'
+        };
+
+        await fetch("http://localhost:5000/submitProduct", requestOptions)
+            .then(response => response.text())
+            .then(result => console.log(result))
+            .catch(error => console.log('error', error));
     }
 
     let listObject;

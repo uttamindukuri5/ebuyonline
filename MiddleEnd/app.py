@@ -25,11 +25,11 @@ def get_all_objects():
 def submit_product():
     products = db.products
     name = request.form['name']
-    img = request.form['img']
-    newPrice = request.form['newPrice']
-    oldPrice = request.form['oldPrice']
+    img = (request.form['img']).split(', ')
+    newPrice = int(request.form['newPrice'])
+    oldPrice = int(request.form['oldPrice'])
     description = request.form['description']
-    features = request.form['features']
+    features = (request.form['features']).split(', ')
     product = {
         "name": name,
         "img": img,
